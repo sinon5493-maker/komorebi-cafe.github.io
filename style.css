@@ -1,0 +1,238 @@
+@charset "UTF-8";
+body {
+    font-family: 'Shippori Mincho',serif;
+    font-size: 18px;
+    color: #302323;
+    background-color: #fdfffa;
+    line-height: 1.0;
+}
+.Logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   }
+   .Logo {
+    animation: fadeIn 3.0s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+   }
+   @keyframes fadeIn {
+     0% {
+       opacity: 0;
+     }
+     100% {
+       opacity: 1;
+     }}
+header {
+    background: url(../img/22976091_s.jpg) no-repeat right center/cover;
+}
+header .innerWrap {
+    height: 720px;
+    position: relative;
+    margin: 48px;
+  }
+header nav ul {
+    display: flex;
+    justify-content: right;
+    width: 1425px;
+    height: 48px;
+    align-items: center;
+}
+header nav ul li a {
+    font-size: 22px;
+    margin: 18px;
+    font-weight: bold;
+    color: #5b3c28;
+}
+header nav ul li a:hover {
+    text-decoration: underline;
+    color:darkgoldenrod;
+}
+header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+main {
+    width: 1425px;
+}
+.innerWrap {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    width: auto;
+    height: 150px;
+    margin: 0;
+    padding: 20px 0;
+    }
+.innerWrap p {
+    overflow: hidden;
+    text-align: center;
+    font-size: 36px;
+    letter-spacing: .05em;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1.5s ease-out forwards;
+}
+.innerWrap p:nth-child(1) {
+    animation-delay: 0.2s
+}
+/* 2文字目 */
+.innerWrap p:nth-child(2) {
+    animation-delay: 0.4s
+}
+/* 3文字目 */
+.innerWrap p:nth-child(3) {
+    animation-delay: 0.6s
+}
+/* 4文字目 */
+.innerWrap p:nth-child(4) {
+    animation-delay: 0.8s
+}
+/* 5文字目 */
+.innerWrap p:nth-child(5) {
+    animation-delay: 1s
+}
+/* 6文字目 */
+.innerWrap p:nth-child(6) {
+    animation-delay: 1.2s
+}
+/* 7文字目 */
+.innerWrap p:nth-child(7) {
+    animation-delay: 1.4s
+}
+/* 8文字目 */
+.innerWrap p:nth-child(8) {
+    animation-delay: 1.6s
+}
+/* 9文字目 */
+.innerWrap p:nth-child(9) {
+    animation-delay: 1.8s
+}
+/* 10文字目 */
+.innerWrap p:nth-child(10) {
+    animation-delay: 2s
+}
+/* 11文字目 */
+.innerWrap p:nth-child(11) {
+    animation-delay: 2.2s
+}
+/* 12文字目 */
+.innerWrap p:nth-child(12) {
+    animation-delay: 2.4s
+}
+/* 13文字目 */
+.innerWrap p:nth-child(13) {
+    animation-delay: 2.6s
+}
+/* 14文字目 */
+.innerWrap p:nth-child(14) {
+    animation-delay: 2.8s
+}
+/* 15文字目 */
+.innerWrap p:nth-child(15) {
+    animation-delay: 3s
+}
+/* 16文字目 */
+.innerWrap p:nth-child(16) {
+    animation-delay: 3.2s
+}
+/* 17文字目 */
+.innerWrap p:nth-child(17) {
+    animation-delay: 3.4s
+}
+/* 18文字目 */
+.innerWrap p:nth-child(18) {
+    animation-delay: 3.6s
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px); /* 下から */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* 元の位置 */
+  }
+}
+.summary {
+    text-align: center;
+    font-size: 18px;
+    line-height: 3.5;
+    letter-spacing: .05em;
+    margin-bottom: 50px;
+    padding: 0;
+}
+.Item {
+    display: inline-block;
+    flex: 1;
+    gap: 0px;
+    padding-top: 10px;
+    margin-left: 50px;
+    text-align: center;
+}
+.Item img {
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    margin: 0;
+    font-size: 0;
+}
+.Item p {
+    width: 400px;
+    margin-top: .5em;
+}
+#accessSec {
+    margin-top: 100px;
+    padding: 30px 30px 30px;
+    line-height: 1.5;
+    background-color: #5b3c28;
+    color: #f2efed;
+}
+main h3 {
+    text-align: left;
+    font-size: 24px;
+    letter-spacing: .05em;
+    margin-bottom: 30px;
+}
+main h4 {
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+#accessSec h3 {
+    font-family: "Sawarabi Gothic", sans-serif;
+}
+#accessSec p {
+    font-family: "Sawarabi Gothic", sans-serif;
+}
+.sns-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+}
+.item3 img {
+    border-radius: 30px;
+}
+.mapInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 3列 */
+    flex-direction: column;
+    gap: 20px; /* 各列の間隔 */
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .info {
+    font-size: 14px; 
+  }
+  .info p {
+    line-height: 1.8;
+    margin-bottom: 2.5em;
+}
+footer {
+    background-color: #5b3c28;
+    text-align: center;
+    width: auto;
+    color: #f2efed;
+    width: 100%;
+}

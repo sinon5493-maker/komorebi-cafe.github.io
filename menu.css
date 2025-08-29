@@ -1,0 +1,186 @@
+@charset "UTF-8";
+ body {
+        font-family: 'Shippori Mincho',serif;
+        font-size: 18px;
+        color: #302323;
+        background-color: #f7f3f0;
+        line-height: 1.0;
+}
+.innerWrap::before {
+    content: "";
+    position: absolute;
+    top: 48px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../img/プリン.jpg) no-repeat right center/cover;
+    height: 300px;
+    width: 1425px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1.5s ease-out forwards;
+  }
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px); /* 下から */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* 元の位置 */
+    }
+  }
+header nav ul {
+    display: flex;
+    justify-content: right;
+    width: 1425px;
+    height: 48px;
+    align-items: center;
+}
+header nav ul li a {
+    font-family: "Shippori Mincho", serif;
+    font-size: 22px;
+    margin: 18px;
+    font-weight: bold;
+    color: #5b3c28;
+}
+header nav ul li a:hover {
+    text-decoration: underline;
+    color:darkgoldenrod;
+}
+main {
+    width: 1425px;
+}
+.MenuList {
+    background-color: #5b3c28;
+    color: #f2efed
+}
+.MenuList h2 {
+    font-size: 60px;
+    text-align: center;
+    padding: 330px 0 30px 0px;
+}
+.MenuList p {
+    text-align: center;
+    padding-bottom: 40px;
+    letter-spacing: .1em;
+}
+.SUMMER {
+    text-align: center;
+    padding: 50px 0 0 0;
+    margin-bottom: 0;
+}
+.SUMMER h3,
+.SUMMER p {
+  display: inline;
+  margin: 0 auto .5em;
+  width: 12em;                 /* ★ここで幅を揃える（emにすると文字サイズ依存） */
+  border-bottom: 1px solid #302323;
+}
+.SUMMER h3 {
+    font-size: 36px;
+    font-weight: normal;
+    letter-spacing: .21em;
+    line-height: 2.4;
+    padding: 20px 0 10px 0;
+}
+.SUMMER p {
+    font-family: "Sawarabi Gothic",sans-serif;
+    font-size: 24px;
+    letter-spacing: .26em;
+    padding: 70px 0 10px 0;
+}
+.SUMMER h4 {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 5px;
+    letter-spacing: .2em;
+}
+.Item {
+    display: inline-block;
+    flex: 1;
+    gap: 20px;
+    justify-content: center;
+    text-align: left;
+    padding-top: 10px;
+    margin-left: 30px;
+}
+.Item h3 {
+    font-family: "Shippori Mincho",serif;
+    font-size: 30px;
+    margin-bottom: .5em;
+}
+.Item img {
+    width: 400px;
+    height: 270px;
+    display: block;
+    margin-bottom: 30px;
+}
+.Item p {
+    width: 400px;
+    line-height: 1.5;
+}
+.item3 img {
+    border-radius: 30px;
+}
+.container {
+    display: flex;
+    gap: 30px;
+
+}
+.price {
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin-top: 30px;
+}
+#accessSec {
+    margin-top: 100px;
+    padding: 30px 30px 30px;
+    line-height: 1.5;
+    background-color: #5b3c28;
+    color: #f2efed;
+}
+main h3 {
+    text-align: left;
+    font-size: 24px;
+    letter-spacing: .05em;
+    margin-bottom: 30px;
+}
+main h4 {
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+#accessSec h3 {
+    font-family: "Sawarabi Gothic", sans-serif;
+}
+#accessSec p {
+    font-family: "Sawarabi Gothic", sans-serif;
+}
+.sns-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+}
+.mapInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 3列 */
+    flex-direction: column;
+    gap: 20px; /* 各列の間隔 */
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .info {
+    font-size: 14px; 
+  }
+  .info p {
+    line-height: 1.8;
+    margin-bottom: 2.5em;
+}
+  footer {
+    background-color: #5b3c28;
+    text-align: center;
+    width: 1425px;
+    color: #f2efed;
+  }
+ 
